@@ -3,15 +3,11 @@ server:
   servlet:
     context-path: /api
 
-logging:
-  level:
-    root: trace
-
 spring:
   application:
     name: Library Management System
   datasource:
-    url: jdbc:sqlserver://localhost:1433;databaseName=you_db_name
+    url: jdbc:sqlserver://localhost:1433;databaseName=you_db_name;encrypt=true;trustServerCertificate=true;
     username: your-db-username
     password: your-db-password
   jpa:
