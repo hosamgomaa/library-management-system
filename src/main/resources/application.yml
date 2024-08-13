@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: Library Management System
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=you_db_name
+    username: your-db-username
+    password: your-db-password
+  jpa:
+    show-sql: true
+  liquibase:
+    change-log: classpath:/db/changelog/db-changelog-master.xml
+
+
+rsa:
+  private-key: classpath:certs/private_key.pem
+  public-key: classpath:certs/public_key.pem
+
+seeded-user:
+  username : your-username
+  password :  your-password
