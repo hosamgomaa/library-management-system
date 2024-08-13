@@ -3,6 +3,10 @@ server:
   servlet:
     context-path: /api
 
+logging:
+  level:
+    root: trace
+
 spring:
   application:
     name: Library Management System
@@ -21,5 +25,5 @@ rsa:
   public-key: classpath:certs/public_key.pem
 
 seeded-user:
-  username : your-username
-  password :  your-password
+  username : user
+  password :  123
